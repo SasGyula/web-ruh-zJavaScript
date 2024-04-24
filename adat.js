@@ -16,7 +16,17 @@ export const cipokLISTA = [
     },
     {
         nev: "New Balance 550",
-        ar: 50000,
+        ar: 55000,
         kep: "kepek/newbalance.webp"
+    },
+    {
+        nev: "AIR JORDAN 4 BRED 'REIMAGINED'",
+        ar: 55000,
+        kep: "kepek/jordan4.webp"
+    },
+    {
+        nev: "NIKE AIR FORCE 1 07 TRIPLE WHITE",
+        ar: 55000,
+        kep: "kepek/airforce1.webp"
     },
 ]
