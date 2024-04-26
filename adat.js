@@ -21,12 +21,12 @@ export const cipokLISTA = [
     },
     {
         nev: "AIR JORDAN 4 BRED 'REIMAGINED'",
-        ar: 55000,
+        ar: 100000,
         kep: "kepek/jordan4.webp"
     },
     {
         nev: "NIKE AIR FORCE 1 07 TRIPLE WHITE",
-        ar: 55000,
+        ar: 35000,
         kep: "kepek/airforce1.webp"
     },
 ]

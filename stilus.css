@@ -1,5 +1,8 @@
 .kepek{
-    width: 350px;
+    width: 220px;
     height: 300px;
     border-radius: 5px;
+}
+#termekek button{
+    background-color: red;
 }
