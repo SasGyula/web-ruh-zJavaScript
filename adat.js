@@ -6,7 +6,7 @@ export const cipokLISTA = [
     },
     {
         nev:"Adidas Campus",
-        ar: 45000,
+        ar: 40000,
         kep: "kepek/campus.webp"
     },
     {

@@ -1,7 +1,7 @@
 import { cipokLISTA } from "./adat.js";
 import { megjelenit ,kartyaRendezes } from "./kartyaMegjelenit.js";
 import { nevRendezes , arRendezes, szures} from "./rendezes.js";
-import { tablazatOsszealit, kosarMennyiseg, torol } from "./fuggvenyek.js";
+import { torol, tablazat } from "./fuggvenyek.js";
 const KOSAR = []
 
 let nevIrany = 1;
@@ -9,11 +9,12 @@ let arIrany = 1 ;
 function init(lista){
     megjelenit(kartyaRendezes(lista))
     kosarEsemeny()
-    torolEsemeny()
+
 }
 nevRendez()
 arRendez()
 szuresEsemeny()
+
 
 
 function nevRendez(){
@@ -42,24 +43,21 @@ function szuresEsemeny(){
 })
 }
 const kosarELEM = $("#kosar")
-const termekSzamELEM = $("termekekSzama")
-
 function kosarEsemeny(){
     const gombELEM = $("#termekek button")
     gombELEM.on("click", function(event){
         const ID = event.target.id
         KOSAR.push(cipokLISTA[ID])
-        kosarELEM.html(tablazatOsszealit(KOSAR))
+        kosarELEM.html(tablazat(KOSAR))
+        torolEsemeny()
     })
 }
 function torolEsemeny(){
-    const torolGombELEM = $("#kosar .torol")
-    console.log(torolGombELEM)
+    const torolGombELEM = $(".torol")
     torolGombELEM.on("click", function(event){
-        console.log("HEllo")
         const ID = event.target.id
         const tLISTA = torol(KOSAR, ID)
-        kosarELEM.html(tablazatOsszealit(tLISTA))
+        kosarELEM.html(tablazat(tLISTA))
     } )
 }
 
