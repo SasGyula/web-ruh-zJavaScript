@@ -36,10 +36,13 @@
           </div>
         </nav>
         <article>
-            <form action="/action_page.php">
+            <form>
                 <div class="mb-3 mt-3">
-                    <label for="nev" class="form-label">Név:</label>
-                    <input type="text" class="form-control" id="nev" placeholder="Tökös Ödön" name="nev">
+                    <label for="nev" class="form-label">Név:</label> 
+                    <input type="text" class="form-control" id="nev" required placeholder="valaki Vagyok" name="nev" pattern="^[A-Z][a-zA-Z ]{2,}$">
+                    <div class="valid-feedback">Ok.</div>
+                    <div class="invalid-feedback">A név megadása kötelező! Nagybetűvel kezdődik, legalább 3 karakter legyen!</div>
+                  </div>
                   </div>
                 <div class="mb-3 mt-3">
                   <label for="email" class="form-label">Email:</label>
@@ -53,10 +56,12 @@
                 <label for="telSzam" class="form-label">Telefonszám:</label>
                 <input type="number" class="form-control" id="telSzam" placeholder="06.." name="telSzam">
               </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" id="submit" class="btn btn-primary">Submit</button>
               </form>   
         </article>
+        <div id="adatok">
 
+        </div>
 
         </main>
 

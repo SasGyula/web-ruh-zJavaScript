@@ -15,7 +15,7 @@ export function tablazat(lista){
       txt += "<tbody>";
       for(let i = 0; i<lista.length; i++){
         txt += `<tr>`;
-        txt += `<td>${lista[i].nev}</td>`;
+        txt += `<td>${lista[i].nev} ${lista[i].db}db</td>`;
         txt += `<td>${lista[i].ar} ft</td>`;
         txt += `<td><img src="${lista[i].kep}" class="kosarKep"></td>`;
         txt += `<td class="torol" id=${i}>🗑️</td>`;

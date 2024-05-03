@@ -5,7 +5,7 @@ import { torol, tablazat } from "./fuggvenyek.js";
 import { ujAdat } from "./urlapkezelos.js";
 
 const KOSAR = []
-const ADATOK = [];
+
 
 let nevIrany = 1;
 let arIrany = 1 ;
@@ -16,8 +16,8 @@ function init(lista){
 nevRendez()
 arRendez()
 szuresEsemeny()
+ujAdat()
 
-ujAdat(ADATOK)
 
 
 function nevRendez(){
@@ -51,10 +51,16 @@ function kosarEsemeny(lista){
     gombELEM.on("click", function(event){
         const ID = event.target.id
         if(!KOSAR.includes(lista[ID])){
+            lista[ID].db = 1
             KOSAR.push(lista[ID])
+            console.log(KOSAR)
             kosarELEM.html(tablazat(KOSAR))
             torolEsemeny()
-        }  
+        }
+        if(KOSAR[ID].indexOf(lista[ID])){
+            lista[ID].db++
+            console.log(db)
+        }
     })
 }
 function torolEsemeny(){
