@@ -1,7 +1,7 @@
 import { cipokLISTA } from "./adat.js";
 import { megjelenit ,kartyaRendezes } from "./kartyaMegjelenit.js";
 import { nevRendezes , arRendezes, szures} from "./rendezes.js";
-import { torol, tablazat, kosarMennyiseg } from "./fuggvenyek.js";
+import { torol, tablazat } from "./fuggvenyek.js";
 import { ujAdat } from "./urlapkezelos.js";
 
 const KOSAR = []
