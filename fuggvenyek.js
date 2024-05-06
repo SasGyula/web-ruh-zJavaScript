@@ -1,7 +1,3 @@
-export function kosarMennyiseg(lista){
-    let txt = `<p>Termékek száma: ${lista.length} </p>`
-    return txt
-}
 export function torol(lista, id) {
     lista.splice(id, 1);
     return lista;
@@ -22,5 +18,6 @@ export function tablazat(lista){
         txt += `<tr>`;
       }
       txt += "</tbody></table>";
+      
       return txt
 }

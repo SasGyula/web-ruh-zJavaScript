@@ -36,7 +36,7 @@
           </div>
         </nav>
         <article>
-            <form>
+            <form class="was-validated">
                 <div class="mb-3 mt-3">
                     <label for="nev" class="form-label">Név:</label> 
                     <input type="text" class="form-control" id="nev" required placeholder="valaki Vagyok" name="nev" pattern="^[A-Z][a-zA-Z ]{2,}$">
@@ -46,11 +46,15 @@
                   </div>
                 <div class="mb-3 mt-3">
                   <label for="email" class="form-label">Email:</label>
-                  <input type="email" class="form-control" id="email" placeholder="valaki@" name="email">
+                  <input type="email" class="form-control" id="email" pattern="[^ @]*@[^ @]*" placeholder="valaki@" name="email">
+                  <div class="valid-feedback">Ok.</div>
+                    <div class="invalid-feedback">@ kötelező</div>
                 </div>
                 <div class="mb-3 mt-3">
-                  <label for="szSzam" class="form-label">Számlaszám:</label>
-                  <input type="number" class="form-control" id="szSzam" placeholder="1170" name="szSzam">
+                  <label for="szSzam" class="form-label">Kor:</label>
+                  <input type="number" class="form-control" id="szSzam" min="15" max="120" placeholder="1170" name="szSzam">
+                  <div class="valid-feedback">Ok.</div>
+                  <div class="invalid-feedback">15 és 120 között</div>
                 </div>
               <div class="mb-3 mt-3">
                 <label for="telSzam" class="form-label">Telefonszám:</label>
@@ -59,9 +63,6 @@
                 <button type="submit" id="submit" class="btn btn-primary">Submit</button>
               </form>   
         </article>
-        <div id="adatok">
-
-        </div>
 
         </main>
 

@@ -1,11 +1,10 @@
 import { cipokLISTA } from "./adat.js";
 import { megjelenit ,kartyaRendezes } from "./kartyaMegjelenit.js";
 import { nevRendezes , arRendezes, szures} from "./rendezes.js";
-import { torol, tablazat } from "./fuggvenyek.js";
+import { torol, tablazat, kosarMennyiseg } from "./fuggvenyek.js";
 import { ujAdat } from "./urlapkezelos.js";
 
 const KOSAR = []
-
 
 let nevIrany = 1;
 let arIrany = 1 ;
@@ -53,13 +52,8 @@ function kosarEsemeny(lista){
         if(!KOSAR.includes(lista[ID])){
             lista[ID].db = 1
             KOSAR.push(lista[ID])
-            console.log(KOSAR)
             kosarELEM.html(tablazat(KOSAR))
             torolEsemeny()
-        }
-        if(KOSAR[ID].indexOf(lista[ID])){
-            lista[ID].db++
-            console.log(db)
         }
     })
 }
