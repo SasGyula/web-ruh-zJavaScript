@@ -21,3 +21,20 @@ export function tablazat(lista){
       
       return txt
 }
+
+export function arNovel(lista){
+  let ar = 0
+    for(let i=0; i<lista.length; i++){
+        ar+= lista[i].ar
+    }
+    return ar
+}
+
+
+export function arCsokkent(lista){
+  let ar = 0
+    for(let i=0; i<lista.length; i++){
+        ar-= lista[i].ar
+    }
+    return ar
+}

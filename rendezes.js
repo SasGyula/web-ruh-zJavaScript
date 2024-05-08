@@ -15,8 +15,8 @@ export function arRendezes(lista, irany) {
     return lista;
 }
 export function szures(lista, keresoSzoveg){
-    const szurtLISTA = lista.filter(function (ember) {
-    return ember.nev.toUpperCase().includes(keresoSzoveg.toUpperCase());
+    const szurtLISTA = lista.filter(function (cipo) {
+    return cipo.nev.toUpperCase().includes(keresoSzoveg.toUpperCase());
   });
   return szurtLISTA;
 

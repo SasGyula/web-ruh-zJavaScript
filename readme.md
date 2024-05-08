@@ -20,3 +20,7 @@ Jelenítsünk meg a listánkat kártyákban, majd a listát tudjuk rendezni növ
 7. **torol(lista, id)** | kitörli az id-edik elemet a kosárlistából, visszatér a törölt kosárListával.
 
 8. **ujAdat()** | az inputokból, ha az összes adat valid, kiprinteli.
+
+9. **arCsokkent(lista)** | visszatér egy árral, ami egyenlő a kosárban lévő elemek árának az összegével. 
+
+10. **arNovel(lista)** | visszatér egy árral, ami egyenlő a kosárban lévő elemek árának az összegével.
