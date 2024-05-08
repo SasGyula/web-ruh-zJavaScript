@@ -54,6 +54,10 @@ function kosarEsemeny(lista){
             KOSAR.push(lista[ID])
             kosarELEM.html(tablazat(KOSAR))
             torolEsemeny()
+        }else if(KOSAR.includes(lista[ID])){
+            lista[ID].db += 1
+            kosarELEM.html(tablazat(KOSAR))
+            torolEsemeny()
         }
     })
 }
